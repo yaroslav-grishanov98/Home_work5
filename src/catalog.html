@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Левая часть (черная боковая панель) */
+        .sidebar {
+            width: 250px;
+            background-color: #000000;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu-items a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 0;
+            border-bottom: 1px solid #333;
+        }
+
+        .menu-items a:hover {
+            color: #66ccff;
+        }
+
+        .profile-section {
+            margin-top: auto;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+        }
+
+        .profile-section a {
+            display: block;
+            text-decoration: none;
+            color: #66ccff;
+            margin-bottom: 10px;
+        }
+
+        /* Правая часть (основной контент) */
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .header p {
+            color: #666;
+        }
+
+        .products {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .product {
+            width: 30%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .product p {
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .buy-button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .buy-button:hover {
+            background-color: #0052a3;
+        }
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Меню</h2>
+        <div class="menu-items">
+            <a href="#">Главная</a>
+            <a href="#">Категории</a>
+            <a href="#">Заказы</a>
+            <a href="#">Контакты</a>
+        </div>
+        <div class="profile-section">
+            <a href="#">Вход</a>
+            <a href="#">Профиль</a>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <h1>Каталог</h1>
+            <p>Вы находитесь на странице каталога</p>
+        </div>
+
+        <div class="products">
+            <div class="product">
+                <h3>Товар 1</h3>
+                <img src="https://avatars.dzeninfra.ru/get-zen_doc/9830831/pub_64be7948c8e530711ca1ccaf_64be7bcf38d71e3138e610be/scale_2400" alt="Товар 1" class="product-image">
+                <p>Вертикальный пылесос, хорошо справляется с любыми напольными покрытиями. В комплекте помимо пылесоса есть док-станция, насадка-валик, насадка для сбора жидкости, фильтр и ёршик для чистки.</p>
+                <button class="buy-button">Купить</button>
+            </div>
+
+            <div class="product">
+                <h3>Товар 2</h3>
+                <img src="https://avatars.mds.yandex.net/i?id=a0f7fbf34933c323e6b64c978ad27ac26cb5801a-4577649-images-thumbs&n=13" alt="Товар 1" class="product-image">
+                <p>Робот-мойщик окон, идеальный помощник по дому для ухода за чистотой как окон, так и других стеклянных поверхностей. В комплекте дистанционный пульт управления.</p>
+                <button class="buy-button">Купить</button>
+            </div>
+
+            <div class="product">
+                <h3>Товар 3</h3>
+                <img src="https://main-cdn.sbermegamarket.ru/big1/hlr-system/-1/13/84/55/75/43/2/600001186749b0.jpeg" alt="Товар 1" class="product-image">
+                <p>Умная сушилка для белья, прекрасно справляется с сушкой вещей, можно установить на потолочное покрытие. В комплекте дистанционный пульт управления.</p>
+                <button class="buy-button">Купить</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
